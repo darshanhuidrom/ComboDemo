@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 //https://professorneurus.wordpress.com/2013/10/23/adding-multiple-clicking-regions-to-an-android-textview/
@@ -74,14 +76,9 @@ public class MainActivity extends AppCompatActivity {
         private  String mText;
         private MyClickableSpan(final String text) {
             mText = text;
-
-          //  new ForegroundColorSpan(Color.YELLOW), 0, mText.length()-1,0));
         }
         @Override
         public void onClick(final View widget) {
-
-
-          //  mListener.onTagClicked(mText);
             Toast.makeText(getApplicationContext(),mText,Toast.LENGTH_SHORT).show();
         }
 
@@ -93,5 +90,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private class CustomComparator implements Comparator<Object> {// may be it would be Model
+        @Override
+        public int compare(Object obj1, Object obj2) {
+            return new Date().compareTo(new Date());
+        }
+    }
 
 }
