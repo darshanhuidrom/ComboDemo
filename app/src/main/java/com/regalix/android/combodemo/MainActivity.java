@@ -3,6 +3,7 @@ package com.regalix.android.combodemo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableString;
+import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.LayoutInflater;
@@ -65,14 +66,16 @@ public class MainActivity extends AppCompatActivity {
         }
         tv.setMovementMethod(LinkMovementMethod.getInstance());
         tv.setText(ss, TextView.BufferType.SPANNABLE);
-        //ss.setSpan(new ForegroundColorSpan(Color.YELLOW), 0, items.size(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
     }
 
 
     private class MyClickableSpan extends ClickableSpan {
-        private final String mText;
+        private  String mText;
         private MyClickableSpan(final String text) {
             mText = text;
+
+          //  new ForegroundColorSpan(Color.YELLOW), 0, mText.length()-1,0));
         }
         @Override
         public void onClick(final View widget) {
@@ -81,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
           //  mListener.onTagClicked(mText);
             Toast.makeText(getApplicationContext(),mText,Toast.LENGTH_SHORT).show();
         }
+
+        @Override
+        public void updateDrawState(TextPaint ds) {
+            super.updateDrawState(ds);
+            ds.setColor(getResources().getColor(R.color.colorPrimaryDark));
+            ds.setUnderlineText(false);
+        }
     }
+
 
 }
