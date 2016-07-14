@@ -18,6 +18,9 @@ import java.util.Date;
 import java.util.List;
 
 //https://professorneurus.wordpress.com/2013/10/23/adding-multiple-clicking-regions-to-an-android-textview/
+
+// http://www.viralandroid.com/2016/03/android-material-design-profile-screen-xml-ui-design.html
+//http://www.rajnikantvscidjokes.in/man-ruling-twitter-extraordinarily-creative-photoshop-skills-dont-send-pic/3/
 public class MainActivity extends AppCompatActivity {
 
     private LinearLayout parentLayout;

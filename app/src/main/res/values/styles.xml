@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!--<style name="edit_profile" >
+        <item name="layout_width">match_parent</item>
+        <item name="layout_height">40dp</item>
+        <item name="background">@drawable/rounded</item>
+
+
+    </style>-->
+
 </resources>
