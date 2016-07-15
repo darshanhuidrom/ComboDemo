@@ -1,13 +1,5 @@
 <resources>
     <string name="app_name">ComboDemo</string>
 
-    <array name="country">
-        <string>India</string>
-        <string>China</string>
-        <string>Pakistan</string>
-        <string>Bangladesh</string>
-        <string>Nepal</string>
-        <string>Thailand</string>
-        <string>Butan</string>
-    </array>
+
 </resources>

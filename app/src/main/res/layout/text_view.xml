@@ -13,7 +13,7 @@ android:orientation="vertical">
         android:text="Name"
         android:layout_margin="10dp"
         android:textSize="24sp"
-        android:onClick="onTextClick"/>
+        />
 
 
 </LinearLayout>
