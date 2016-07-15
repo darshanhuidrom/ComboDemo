@@ -47,7 +47,7 @@ public class Utility {
 
     }
 
-    private void loadImageFromStorage(String path, ImageView imageView) {
+    private void loadImageFromStorage(ImageView imageView) {
 
         try {
             File f = new File(getRootDirectory(), IMAGE_NAME);
@@ -59,13 +59,11 @@ public class Utility {
 
     }
 
-    private void loadImageFromStorage(ImageView imageView) {
+   /* private void loadImageFromStorage(ImageView imageView) {
 
-        ContextWrapper cw = new ContextWrapper(context);
-        File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
-        File mypath = new File(directory, "profile.jpg");
+        File mypath = new File(getRootDirectory(), "profile.jpg");
         loadImageFromStorage(mypath.getPath(), imageView);
 
 
-    }
+    }*/
 }
