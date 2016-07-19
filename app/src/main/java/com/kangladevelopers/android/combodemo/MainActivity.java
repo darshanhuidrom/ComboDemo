@@ -1,4 +1,4 @@
-package com.regalix.android.combodemo;
+package com.kangladevelopers.android.combodemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

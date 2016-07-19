@@ -1,4 +1,4 @@
-package com.regalix.android.combodemo;
+package com.kangladevelopers.android.combodemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 // https://www.codeofaninja.com/2013/12/android-autocompletetextview-custom-arrayadapter-sqlite.html
 
-import com.regalix.android.combodemo.adapter.AutocompleteCustomArrayAdapter;
+import com.kangladevelopers.android.combodemo.adapter.AutocompleteCustomArrayAdapter;
 
 public class AutoCompleteTest extends AppCompatActivity {
 

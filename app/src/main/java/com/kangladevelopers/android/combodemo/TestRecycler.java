@@ -1,12 +1,12 @@
-package com.regalix.android.combodemo;
+package com.kangladevelopers.android.combodemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.regalix.android.combodemo.adapter.DividerItemDecoration;
-import com.regalix.android.combodemo.adapter.RVAdapter;
+import com.kangladevelopers.android.combodemo.adapter.DividerItemDecoration;
+import com.kangladevelopers.android.combodemo.adapter.RVAdapter;
 
 import java.util.ArrayList;
 

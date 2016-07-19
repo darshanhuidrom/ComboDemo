@@ -1,4 +1,4 @@
-package com.regalix.android.combodemo.adapter;
+package com.kangladevelopers.android.combodemo.adapter;
 
 import android.content.Context;
 import android.content.res.TypedArray;

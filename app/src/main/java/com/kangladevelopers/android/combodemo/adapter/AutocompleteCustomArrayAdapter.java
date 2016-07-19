@@ -1,4 +1,4 @@
-package com.regalix.android.combodemo.adapter;
+package com.kangladevelopers.android.combodemo.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.regalix.android.combodemo.R;
+import com.kangladevelopers.android.combodemo.R;
 
 /**
  * Created by DARSHAN HUIDROJM on 7/15/2016.

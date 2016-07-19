@@ -1,4 +1,4 @@
-package com.regalix.android.combodemo;
+package com.kangladevelopers.android.combodemo;
 
 import org.junit.Test;
 

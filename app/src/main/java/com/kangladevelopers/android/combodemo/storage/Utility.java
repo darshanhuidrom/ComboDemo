@@ -1,4 +1,4 @@
-package com.regalix.android.combodemo.storage;
+package com.kangladevelopers.android.combodemo.storage;
 
 import android.content.Context;
 import android.content.ContextWrapper;

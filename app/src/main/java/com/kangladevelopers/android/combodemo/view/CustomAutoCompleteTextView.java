@@ -1,4 +1,4 @@
-package com.regalix.android.combodemo.view;
+package com.kangladevelopers.android.combodemo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
