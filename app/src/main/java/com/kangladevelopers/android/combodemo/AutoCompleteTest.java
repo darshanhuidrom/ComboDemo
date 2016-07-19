@@ -1,7 +1,13 @@
 package com.kangladevelopers.android.combodemo;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -9,9 +15,12 @@ import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 
-// https://www.codeofaninja.com/2013/12/android-autocompletetextview-custom-arrayadapter-sqlite.html
-
 import com.kangladevelopers.android.combodemo.adapter.AutocompleteCustomArrayAdapter;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+// https://www.codeofaninja.com/2013/12/android-autocompletetextview-custom-arrayadapter-sqlite.html
 
 public class AutoCompleteTest extends AppCompatActivity {
 
@@ -22,6 +31,7 @@ public class AutoCompleteTest extends AppCompatActivity {
         setContentView(R.layout.activity_auto_complete_test);
         act= (AutoCompleteTextView) findViewById(R.id.act);
 
+        printHashKey(getApplicationContext());
         String[] str ={"data1:M//test1","data2:M//","data3:F","data4:M","data5:F","data6:M","data7:F","data8:F","data9:F",};
         String[] displayData = new String[str.length];
         for (int i = 0; i < str.length; i++) {
@@ -75,6 +85,21 @@ public class AutoCompleteTest extends AppCompatActivity {
     }
 
 
+    public static void printHashKey(Context pContext) {
+        try {
+            PackageInfo info = pContext.getPackageManager().getPackageInfo("com.kangladevelopers.android.combodemo", PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                String hashKey = new String(Base64.encode(md.digest(), 0));
+                Log.i(">>>>", "printHashKey() Hash Key: " + hashKey);
+            }
+        } catch (NoSuchAlgorithmException e) {
+            Log.e(">>>>", "printHashKey()", e);
+        } catch (Exception e) {
+            Log.e(">>>>", "printHashKey()", e);
+        }
+    }
 
 
 }
