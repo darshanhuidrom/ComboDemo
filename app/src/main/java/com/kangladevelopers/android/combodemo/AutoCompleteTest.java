@@ -21,6 +21,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 // https://www.codeofaninja.com/2013/12/android-autocompletetextview-custom-arrayadapter-sqlite.html
+//https://www.facebook.com/BabaFunZone/videos/1093825823984497/
 
 public class AutoCompleteTest extends AppCompatActivity {
 
