@@ -24,6 +24,9 @@ public class FacebookTestActivity extends AppCompatActivity {
     private LoginButton loginButton;
     CallbackManager callbackManager;
 
+    // https://www.numetriclabz.com/get-facebook-friends-list-in-android-list-view/
+
+
     // https://graph.facebook.com/POST_ID/likes?summary=true&access_token=XXXXXXXXXXXX
     //https://developers.facebook.com/docs/graph-api/reference/v2.7/user/feed
     //https://developers.facebook.com/docs/facebook-login/android#prerequisites
@@ -38,7 +41,7 @@ public class FacebookTestActivity extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setReadPermissions("email","user_posts");
+        loginButton.setReadPermissions("email","user_posts","user_friends");
         // If using in a fragment
         //  loginButton.setFragment(this);
         // Other app specific specialization
@@ -118,6 +121,21 @@ public class FacebookTestActivity extends AppCompatActivity {
         new GraphRequest(
                 AccessToken.getCurrentAccessToken(),
                 "/me/feed",
+                null,
+                HttpMethod.GET,
+                new GraphRequest.Callback() {
+                    public void onCompleted(GraphResponse response) {
+            /* handle the result */
+                        GraphResponse gs =response;
+                    }
+                }
+        ).executeAsync();
+    }
+
+    public void getFriends(View view){
+        new GraphRequest(
+                AccessToken.getCurrentAccessToken(),
+                "/me/friends",
                 null,
                 HttpMethod.GET,
                 new GraphRequest.Callback() {
