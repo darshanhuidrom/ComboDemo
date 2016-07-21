@@ -3,6 +3,7 @@ package com.kangladevelopers.android.combodemo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.facebook.AccessToken;
@@ -18,6 +19,11 @@ import com.facebook.ProfileTracker;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.kangladevelopers.android.combodemo.pojo.User;
+import com.kangladevelopers.android.combodemo.utility.Utility;
+
+import java.util.Collections;
+import java.util.List;
 
 public class FacebookTestActivity extends AppCompatActivity {
 
@@ -31,7 +37,7 @@ public class FacebookTestActivity extends AppCompatActivity {
     //https://developers.facebook.com/docs/graph-api/reference/v2.7/user/feed
     //https://developers.facebook.com/docs/facebook-login/android#prerequisites
     // https://graph.facebook.com/225639331164520_203950056666781/likes?summary=true&access_token=EAAZAryXrIaXsBAAstJo37MLOMApmRAAnhAyZCFZBEkGw2HJ1Om2ZBSfKkZBZBr9huWcwJHxS77GmgU5V4PXLZBVTZBbHN7udZC9MOX4IxdsG8KKbZCRfr8DEwhTxQyXXegkhEkhUm2NtQN7ZCGBzq6KWbkquXiqQv3zoqXsuLohityBheDl0Q3ugcuNZBBHMcQjFbBcd50nt0Ssu9goIts2zqT5PyKhmd9LgMNhRnKirCMEXNgZDZD
-
+    // https://developers.facebook.com/docs/facebook-login/permissions/v2.4
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +74,13 @@ public class FacebookTestActivity extends AppCompatActivity {
         });
 
 
-
+// testing.....
+        Utility utility = new Utility();
+        String data="Darshan Huidrom,Huidrom Darshan,Narendra Modi,Modi Narendra,Salman Khan,Khan Salman";
+        List<User> users = utility.convertArrayToUsers(data,",");
+        Collections.sort((List<Comparable>) new Utility.CustomComparator());
+        users.toString();
+        Log.d("######",users.toString());
 
     }
 
@@ -135,7 +147,7 @@ public class FacebookTestActivity extends AppCompatActivity {
     public void getFriends(View view){
         new GraphRequest(
                 AccessToken.getCurrentAccessToken(),
-                "/me/friends",
+                "/me/taggable_friends",
                 null,
                 HttpMethod.GET,
                 new GraphRequest.Callback() {

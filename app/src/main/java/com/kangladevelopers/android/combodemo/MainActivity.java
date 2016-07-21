@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        parentLayout = (LinearLayout) findViewById(R.id.parent_layout);
+      //  parentLayout = (LinearLayout) findViewById(R.id.parent_layout);
         TextView textView = (TextView) findViewById(R.id.tv_multi_clikable);
         makeTagLinks("add1,add2,add3,add1,add2,add3,add1,add2,add3",textView );
     }
