@@ -78,7 +78,7 @@ public class FacebookTestActivity extends AppCompatActivity {
         Utility utility = new Utility();
         String data="Darshan Huidrom,Huidrom Darshan,Narendra Modi,Modi Narendra,Salman Khan,Khan Salman";
         List<User> users = utility.convertArrayToUsers(data,",");
-        Collections.sort((List<Comparable>) new Utility.CustomComparator());
+        Collections.sort(users,new Utility.CustomComparator());
         users.toString();
         Log.d("######",users.toString());
 

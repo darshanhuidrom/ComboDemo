@@ -2,13 +2,18 @@ package com.kangladevelopers.android.combodemo.utility;
 
 import com.kangladevelopers.android.combodemo.pojo.User;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 /**
  * Created by DARSHAN HUIDROJM on 7/21/2016.
  */
+
+// http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
 public class Utility {
 
 
@@ -34,5 +39,33 @@ public class Utility {
             users.add(user);
         }
         return users;
+    }
+
+
+    public static String parseDateByFormatToString(Date date, String stringFormat) {
+        SimpleDateFormat format = new SimpleDateFormat(stringFormat);
+        String dateString = format.format(date);
+        return dateString;
+    }
+
+    public static Date convertStringToDate(String dateString) {
+        SimpleDateFormat format = new SimpleDateFormat(DateFormatString.COMMON_FORMAT);
+        Date date = null;
+        try {
+            date = format.parse(dateString);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return date;
+    }
+    public static Date convertStringToDate(String dateString,String stringFormat) {
+        SimpleDateFormat format = new SimpleDateFormat(stringFormat);
+        Date date = null;
+        try {
+            date = format.parse(dateString);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return date;
     }
 }
