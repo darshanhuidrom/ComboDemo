@@ -1,0 +1,15 @@
+
+
+Autocomplete CustomAdapter::
+https://www.codeofaninja.com/2013/12/android-autocompletetextview-custom-arrayadapter-sqlite.html
+https://www.facebook.com/BabaFunZone/videos/1093825823984497/
+
+Facebook Related documents:
+https://www.numetriclabz.com/get-facebook-friends-list-in-android-list-view/
+https://graph.facebook.com/POST_ID/likes?summary=true&access_token=XXXXXXXXXXXX
+https://developers.facebook.com/docs/graph-api/reference/v2.7/user/feed
+https://developers.facebook.com/docs/facebook-login/android#prerequisites
+https://graph.facebook.com/225639331164520_203950056666781/likes?summary=true&access_token=EAAZAryXrIaXsBAAstJo37MLOMApmRAAnhAyZCFZBEkGw2HJ1Om2ZBSfKkZBZBr9huWcwJHxS77GmgU5V4PXLZBVTZBbHN7udZC9MOX4IxdsG8KKbZCRfr8DEwhTxQyXXegkhEkhUm2NtQN7ZCGBzq6KWbkquXiqQv3zoqXsuLohityBheDl0Q3ugcuNZBBHMcQjFbBcd50nt0Ssu9goIts2zqT5PyKhmd9LgMNhRnKirCMEXNgZDZD
+
+Lists of Facebook Permission:
+https://developers.facebook.com/docs/facebook-login/permissions/v2.4

@@ -48,6 +48,10 @@ public class Utility {
         return dateString;
     }
 
+    public static String parseDateByFormatToString(Date date) {
+        return parseDateByFormatToString(date,DateFormatString.COMMON_FORMAT);
+    }
+
     public static Date convertStringToDate(String dateString) {
         SimpleDateFormat format = new SimpleDateFormat(DateFormatString.COMMON_FORMAT);
         Date date = null;
