@@ -20,14 +20,14 @@ public class PopUpWindowActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pop_up_window);
     }
 
-    public  void showPopUp(View view){
+    public void showPopUp(View view) {
 
-         popup = new PopupWindow(this);
+        popup = new PopupWindow(this);
         View layout = getLayoutInflater().inflate(R.layout.popup, null);
         popup.setContentView(layout);
         // Set content width and height
         popup.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
-        popup.setWidth(Utility.dip2px(getApplicationContext(),200));
+        popup.setWidth(Utility.dip2px(getApplicationContext(), 200));
         // Closes the popup window when touch outside of it - when looses focus
         popup.setOutsideTouchable(true);
         popup.setFocusable(true);
@@ -35,9 +35,9 @@ public class PopUpWindowActivity extends AppCompatActivity {
         popup.showAsDropDown(view);
     }
 
-    public void onSortClick(View view){
-       TextView tv = (TextView) view;
-        Toast.makeText(getApplicationContext(),tv.getText()+"",Toast.LENGTH_SHORT).show();
+    public void onSortClick(View view) {
+        TextView tv = (TextView) view;
+        Toast.makeText(getApplicationContext(), tv.getText() + "", Toast.LENGTH_SHORT).show();
         popup.dismiss();
 
     }
