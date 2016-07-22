@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="style2" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
 
     <!--<style name="edit_profile" >
         <item name="layout_width">match_parent</item>
