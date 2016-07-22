@@ -44,7 +44,10 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
     }
 
     public void notifyDataSetChanged(List<String> strings) {
-        this.strings = strings;
+        if(strings==null&& strings.isEmpty()){
+            return;
+        }
+        this.strings.addAll(strings);
         notifyDataSetChanged();
     }
 

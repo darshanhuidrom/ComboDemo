@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.kangladevelopers.android.combodemo.Listener.EndlessRecyclerOnScrollListener;
 import com.kangladevelopers.android.combodemo.adapter.DividerItemDecoration;
 import com.kangladevelopers.android.combodemo.adapter.RVAdapter;
 
@@ -19,14 +20,25 @@ public class TestRecycler extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_recycler);
         rv= (RecyclerView) findViewById(R.id.rv);
+        rvAdapter = new RVAdapter(getApplicationContext(),loadData(0));
+        rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        rv.addItemDecoration(new DividerItemDecoration(getApplicationContext(),R.drawable.divider));
+        rv.setAdapter(rvAdapter);
+        rv.addOnScrollListener(new EndlessRecyclerOnScrollListener((LinearLayoutManager) rv.getLayoutManager()) {
+            @Override
+            public void onLoadMore(int current_page) {
+                rvAdapter.notifyDataSetChanged( loadData(current_page));
+
+            }
+        });
+    }
+
+    private ArrayList<String> loadData(int currentPage){
         ArrayList<String> arrayList = new ArrayList<>();
-        for(int i=0;i<30;i++){
+        int nextTotal = currentPage+30;
+        for (int i=currentPage;i<=nextTotal;i++){
             arrayList.add("Test "+i);
         }
-        rvAdapter = new RVAdapter(getApplicationContext(),arrayList);
-        rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-       rv.addItemDecoration(new DividerItemDecoration(getApplicationContext(),R.drawable.divider));
-
-        rv.setAdapter(rvAdapter);
+        return arrayList;
     }
 }
