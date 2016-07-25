@@ -29,15 +29,15 @@ public class Utility {
     }
 
 
-    public List<User> convertArrayToUsers(String data,String splitter){
+    public List<User> convertArrayToUsers(String data, String splitter) {
 
-        String[] array= data.split(splitter);
+        String[] array = data.split(splitter);
         String temp;
         ArrayList<User> users = new ArrayList<>();
-        for (int i=0;i<array.length;i++){
+        for (int i = 0; i < array.length; i++) {
             temp = array[i];
-            int pos= temp.indexOf(" ");
-            User user = new User(temp.substring(0,pos),temp.substring(pos+1));
+            int pos = temp.indexOf(" ");
+            User user = new User(temp.substring(0, pos), temp.substring(pos + 1));
             users.add(user);
         }
         return users;
@@ -51,7 +51,7 @@ public class Utility {
     }
 
     public static String parseDateByFormatToString(Date date) {
-        return parseDateByFormatToString(date,DateFormatString.COMMON_FORMAT);
+        return parseDateByFormatToString(date, DateFormatString.COMMON_FORMAT);
     }
 
     public static Date convertStringToDate(String dateString) {
@@ -64,7 +64,8 @@ public class Utility {
         }
         return date;
     }
-    public static Date convertStringToDate(String dateString,String stringFormat) {
+
+    public static Date convertStringToDate(String dateString, String stringFormat) {
         SimpleDateFormat format = new SimpleDateFormat(stringFormat);
         Date date = null;
         try {
@@ -76,18 +77,51 @@ public class Utility {
     }
 
 
-    public static int dip2px(Context context, float dipValue){
+    public static int dip2px(Context context, float dipValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
-        return (int)(dipValue * scale + 0.5f);
+        return (int) (dipValue * scale + 0.5f);
     }
 
-    public static int px2dip(Context context, float pxValue){
+    public static int px2dip(Context context, float pxValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
-        return (int)(pxValue / scale + 0.5f);
+        return (int) (pxValue / scale + 0.5f);
     }
 
     public static int sp2px(Context context, float spValue) {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * fontScale + 0.5f);
     }
+
+    public static String removeSpaceFromEnd(String s) {
+
+        boolean b = true;
+        while (b) {
+            if (s.charAt(s.length()) == ' ') {
+                s = s.substring(0, s.length() - 1);
+                b = true;
+            } else {
+                b = false;
+            }
+        }
+        return s;
+    }
+
+    public static String removeSpaceFromFirst(String name) {
+        boolean flag=true;
+        while (flag){
+            if(name.charAt(0)==' '){
+                name = name.substring(1);
+                flag=true;
+            }else {
+                flag=false;
+            }
+        }
+        return name;
+    }
+
+    public static String removeSpaceFromFirstAndEnd(String name) {
+        return removeSpaceFromEnd(removeSpaceFromFirst(name));
+    }
+
+
 }
