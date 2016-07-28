@@ -17,7 +17,7 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <activity android:name=".downloader.DownloadActivity">
+        <activity android:name=".fragment.MyFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,7 +50,8 @@
             </intent-filter>
         </activity>
         <!-- <activity android:name=".PopUpWindowActivity"></activity> -->
-       <!-- <activity android:name=".downloader.DownloadActivity"></activity>-->
+        <!-- <activity android:name=".downloader.DownloadActivity"></activity> -->
+        <!--<activity android:name=".fragment.MyFragmentActivity"></activity>-->
     </application>
 
 </manifest>

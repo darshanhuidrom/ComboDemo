@@ -3,5 +3,14 @@
     <string name="facebook_app_id">1807362952817019</string>
     <string name="fb_login_protocol_scheme">fb1807362952817019</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_str1">Add Fragment1</string>
+    <string name="btn_str2">Add Fragment2</string>
+    <string name="btn_str3">Remove Current Fragment</string>
+    <string name="btn_str4">Destroy All</string>
+    <string name="btn_str5">Add Fragment2</string>
+    <string name="btn_str6">Add Fragment2</string>
+
 
 </resources>
