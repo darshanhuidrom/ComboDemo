@@ -15,3 +15,7 @@ https://developers.facebook.com/docs/facebook-login/permissions/v2.4
 
 DateFormat related from oracle:
 http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+
+
+Animation Related:
+http://www.vogella.com/tutorials/AndroidAnimation/article.html
