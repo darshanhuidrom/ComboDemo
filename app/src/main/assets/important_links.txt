@@ -19,3 +19,13 @@ http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
 
 Animation Related:
 http://www.vogella.com/tutorials/AndroidAnimation/article.html
+
+
+AR:
+https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/
+
+Game:
+http://blog.rabidgremlin.com/2015/01/11/tutorial-creating-your-first-unity-android-app-2015-update/
+
+Runtime Permission:
+http://www.truiton.com/2016/04/obtaining-runtime-permissions-android-marshmallow-6-0/
