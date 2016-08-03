@@ -19,7 +19,7 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <activity android:name=".TestRunTimePermissionActivity">
+        <activity android:name="com.kangladevelopers.android.combodemo.chat.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,6 +51,8 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.kangladevelopers.android.combodemo.chat.SignInActivity" />
         <!-- <activity android:name=".PopUpWindowActivity"></activity> -->
         <!-- <activity android:name=".downloader.DownloadActivity"></activity> -->
         <!-- <activity android:name=".fragment.MyFragmentActivity"></activity> -->
@@ -62,6 +64,14 @@
             android:name=".firebase.service.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".firebase.service.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 

@@ -33,5 +33,8 @@ http://www.truiton.com/2016/04/obtaining-runtime-permissions-android-marshmallow
 Google Analytics:
 https://developers.google.com/analytics/devguides/collection/android/v4/mobile-implementation-guide
 
+Chat with firebase:
+https://codelabs.developers.google.com/codelabs/firebase-android/#0
+
 Fetching SHA1:
 http://stackoverflow.com/questions/27609442/how-to-get-the-sha1-fingerprint-certificate-in-android-studio-for-debug-mode
