@@ -38,3 +38,6 @@ https://codelabs.developers.google.com/codelabs/firebase-android/#0
 
 Fetching SHA1:
 http://stackoverflow.com/questions/27609442/how-to-get-the-sha1-fingerprint-certificate-in-android-studio-for-debug-mode
+
+Google sample tutorial:
+https://codelabs.developers.google.com/

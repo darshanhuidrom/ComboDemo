@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements
             return;
         } else {
             mUsername = mFirebaseUser.getDisplayName();
-            mPhotoUrl = mFirebaseUser.getPhotoUrl().toString();
+            mPhotoUrl = mFirebaseUser.getPhotoUrl()+"";
         }
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
