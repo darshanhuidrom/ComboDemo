@@ -29,3 +29,9 @@ http://blog.rabidgremlin.com/2015/01/11/tutorial-creating-your-first-unity-andro
 
 Runtime Permission:
 http://www.truiton.com/2016/04/obtaining-runtime-permissions-android-marshmallow-6-0/
+
+Google Analytics:
+https://developers.google.com/analytics/devguides/collection/android/v4/mobile-implementation-guide
+
+Fetching SHA1:
+http://stackoverflow.com/questions/27609442/how-to-get-the-sha1-fingerprint-certificate-in-android-studio-for-debug-mode

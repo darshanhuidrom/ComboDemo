@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "320122919078",
+    "firebase_url": "https://combodemo.firebaseio.com",
+    "project_id": "combodemo",
+    "storage_bucket": "combodemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320122919078:android:127c466fb7483cd7",
+        "android_client_info": {
+          "package_name": "com.kangladevelopers.android.combodemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320122919078-9em1i2v6op8r3sg7u8euv00qd55krmcc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kangladevelopers.android.combodemo",
+            "certificate_hash": "3533C59AB723E0D24E2A51E470A97CBD0F1B329C"
+          }
+        },
+        {
+          "client_id": "320122919078-ej1veji758inkn76h65p3j4gh2klnvd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGbATyfyXoqaAKTOXsrdz00SYJwC0tPrM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320122919078-ej1veji758inkn76h65p3j4gh2klnvd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
