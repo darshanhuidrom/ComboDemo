@@ -1,9 +1,16 @@
 package com.kangladevelopers.android.combodemo.utility;
 
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.util.Base64;
+import android.util.Log;
 
 import com.kangladevelopers.android.combodemo.pojo.User;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -107,13 +114,13 @@ public class Utility {
     }
 
     public static String removeSpaceFromFirst(String name) {
-        boolean flag=true;
-        while (flag){
-            if(name.charAt(0)==' '){
+        boolean flag = true;
+        while (flag) {
+            if (name.charAt(0) == ' ') {
                 name = name.substring(1);
-                flag=true;
-            }else {
-                flag=false;
+                flag = true;
+            } else {
+                flag = false;
             }
         }
         return name;
@@ -121,6 +128,25 @@ public class Utility {
 
     public static String removeSpaceFromFirstAndEnd(String name) {
         return removeSpaceFromEnd(removeSpaceFromFirst(name));
+    }
+
+
+    public static void printHashKey(Context pContext) {
+
+        String packageName = pContext.getPackageName();
+        try {
+            PackageInfo info = pContext.getPackageManager().getPackageInfo(packageName, PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                String hashKey = new String(Base64.encode(md.digest(), 0));
+                Log.i(">>>>", "printHashKey() Hash Key: " + hashKey);
+            }
+        } catch (NoSuchAlgorithmException e) {
+            Log.e(">>>>", "printHashKey()", e);
+        } catch (Exception e) {
+            Log.e(">>>>", "printHashKey()", e);
+        }
     }
 
 
