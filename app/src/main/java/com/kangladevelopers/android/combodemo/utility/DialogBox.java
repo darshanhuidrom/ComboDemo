@@ -11,6 +11,7 @@ abstract public class DialogBox {
     Activity activity;
 
     public DialogBox(Activity activity) {
+
         this.activity = activity;
     }
 
