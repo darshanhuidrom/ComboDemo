@@ -1,0 +1,6 @@
+
+To search any where columname contains(Sphere)
+select * from FEED_TABLE where _feed_name LIke '%Sphere%'
+
+To search which contains both name in the _feed_name column
+select * from FEED_TABLE where _feed_name IN('VMware','Justin Bias')

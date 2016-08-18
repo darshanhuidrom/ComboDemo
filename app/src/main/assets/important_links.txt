@@ -53,3 +53,6 @@ http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/
 Proguard Related:
 http://www.optimusinfo.com/android-application-security-with-proguard/
 https://github.com/siddheshwwindia/KnowledgeBase/wiki/Implementing-Proguard-in-Android
+
+ADA-Framework:
+https://github.com/mobandme/ADA-Framework
