@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.content.res.Configuration;
 import android.util.Base64;
 import android.util.Log;
 
@@ -146,6 +147,18 @@ public class Utility {
             Log.e(">>>>", "printHashKey()", e);
         } catch (Exception e) {
             Log.e(">>>>", "printHashKey()", e);
+        }
+    }
+
+
+    public static boolean isTablet(Context context) {
+        String device_screen;
+        if ((context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_LARGE) {
+            device_screen = "large";
+            return true;
+        } else {
+            device_screen = "small";
+            return false;
         }
     }
 
