@@ -54,5 +54,8 @@ Proguard Related:
 http://www.optimusinfo.com/android-application-security-with-proguard/
 https://github.com/siddheshwwindia/KnowledgeBase/wiki/Implementing-Proguard-in-Android
 
+Use of OKHTTPClient:
+http://www.vogella.com/tutorials/JavaLibrary-OkHttp/article.html
+
 ADA-Framework:
 https://github.com/mobandme/ADA-Framework
