@@ -53,6 +53,7 @@ http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/
 Proguard Related:
 http://www.optimusinfo.com/android-application-security-with-proguard/
 https://github.com/siddheshwwindia/KnowledgeBase/wiki/Implementing-Proguard-in-Android
+https://github.com/krschultz/android-proguard-snippets/blob/master/libraries/proguard-square-okhttp3.pro
 
 Use of OKHTTPClient:
 http://www.vogella.com/tutorials/JavaLibrary-OkHttp/article.html
