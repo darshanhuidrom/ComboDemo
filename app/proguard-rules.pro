@@ -15,3 +15,32 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+
+#-keepclassmembers class * {@android.webkit.JavascriptInterface <methods>;}
+#-dontwarn com.squareup.okhttp.**
+#-keepattributes Signature
+#-keepattributes *Annotation*
+#-keep class okhttp3.** { *; }
+#-keep interface okhttp3.** { *; }
+#-dontwarn okhttp3.**
+
+#-keep public class com.viewpagerindicator** { *; }
+#-keep class okhttp3.** { *; }
+#-keepattributes Signature
+
+# For using GSON @Expose annotation
+#-keepattributes *Annotation*
+
+#-keepattributes EnclosingMethod
+
+# Gson specific classes
+#-keep class sun.misc.Unsafe { *; }
+#-keep class com.google.gson.stream.** { *; }
+
+
+#-keep public class android.support.v7.widget.** { *; }
+#-keep public class android.support.v7.internal.widget.** { *; }
+#-keep public class android.support.v7.internal.view.menu.** { *; }
+
+#-keep public class * extends android.support.v4.view.ActionProvider { public <init>(android.content.Context);}
