@@ -1,3 +1,6 @@
 ******************Some Annoying Issues Solution Links***********
 Failed to resolve:
 http://stackoverflow.com/questions/37310188/failed-to-resolve-com-google-firebasefirebase-core9-0-0
+
+Issues in Proguard:
+Try to resolve all warning such as duplication,package warnings...
