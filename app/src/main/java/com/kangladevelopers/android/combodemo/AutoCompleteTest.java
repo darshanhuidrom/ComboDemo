@@ -86,6 +86,7 @@ public class AutoCompleteTest extends AppCompatActivity {
     }
 
 
+
     public static void printHashKey(Context pContext) {
         try {
             PackageInfo info = pContext.getPackageManager().getPackageInfo("com.kangladevelopers.android.combodemo", PackageManager.GET_SIGNATURES);

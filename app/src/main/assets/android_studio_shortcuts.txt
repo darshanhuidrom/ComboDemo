@@ -1,0 +1,17 @@
+select wide code: ctrl+w
+
+code completion: ctrl+space
+
+go to declaration: ctrl+b
+
+go to class: ctrl+n
+
+open any file: ctrl+shift+n
+
+comment and uncomment: ctrl+/ and ctrl+shift+/
+
+quick open java doc:  ctrl+q
+
+completion appropiate method: ctrl+shift+space
+
+hightlight particular words java code: ctrl+shift+f7{to undo: ctrl+shift+f7 then esc}

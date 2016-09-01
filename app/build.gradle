@@ -63,6 +63,9 @@ dependencies {
     // Firebase UI
     compile 'com.firebaseui:firebase-ui-database:0.4.0'
 
+
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+
 }
 
 // Add to the bottom of the file
