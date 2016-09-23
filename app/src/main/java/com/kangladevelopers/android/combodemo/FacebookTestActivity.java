@@ -55,6 +55,7 @@ public class FacebookTestActivity extends AppCompatActivity {
         // Callback registration
 
 
+
         LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
