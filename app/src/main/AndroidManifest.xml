@@ -19,7 +19,7 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <activity android:name=".notification.NotificationSenderActivity">
+        <activity android:name=".service.MyServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -74,14 +74,17 @@
         <receiver
             android:name=".notification.MyReciever"
             android:enabled="true">
-        <intent-filter>
-            <action android:name="com.android.custom_broadcast">
-            </action>
-        </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.custom_broadcast"></action>
+            </intent-filter>
         </receiver>
 
-        <!--<activity android:name=".notification.NotificationSenderActivity" />-->
-        <activity android:name=".notification.DisplayMessageActivity"></activity>
+        <!-- <activity android:name=".notification.NotificationSenderActivity" /> -->
+        <activity android:name=".notification.DisplayMessageActivity" />
+
+        <service android:name=".service.MyBoundService" />
+
+        <!--<activity android:name=".service.MyServiceActivity"></activity>-->
     </application>
 
 </manifest>
