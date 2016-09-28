@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.kangladevelopers.android.combodemo">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -19,7 +20,7 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <activity android:name=".service.MyServiceActivity">
+        <activity android:name=".cordinator.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,8 +35,7 @@
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:label="@string/app_name"/>
         <!-- <activity android:name=".FacebookTestActivity"></activity> -->
 
         <activity
@@ -75,7 +75,7 @@
             android:name=".notification.MyReciever"
             android:enabled="true">
             <intent-filter>
-                <action android:name="com.android.custom_broadcast"></action>
+                <action android:name="com.android.custom_broadcast" />
             </intent-filter>
         </receiver>
 
@@ -84,7 +84,7 @@
 
         <service android:name=".service.MyBoundService" />
 
-        <!--<activity android:name=".service.MyServiceActivity"></activity>-->
+        <!-- <activity android:name=".service.MyServiceActivity"></activity> -->
     </application>
 
 </manifest>

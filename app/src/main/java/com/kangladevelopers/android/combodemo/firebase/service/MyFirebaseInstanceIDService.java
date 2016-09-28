@@ -13,6 +13,8 @@ import com.kangladevelopers.android.combodemo.utility.MyApplication;
  */
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
+    // This firebase use the account dhuidrom@regalix-inc.com
+
     private static final String TAG = MyFirebaseInstanceIDService.class.getSimpleName();
 
     @Override
