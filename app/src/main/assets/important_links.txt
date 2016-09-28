@@ -60,3 +60,6 @@ http://www.vogella.com/tutorials/JavaLibrary-OkHttp/article.html
 
 ADA-Framework:
 https://github.com/mobandme/ADA-Framework
+
+Android support Design lib examples:
+http://toastdroid.com/2016/03/14/design-support-lib/
