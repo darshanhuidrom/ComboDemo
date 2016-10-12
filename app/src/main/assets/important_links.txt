@@ -67,3 +67,6 @@ http://toastdroid.com/2016/03/14/design-support-lib/
 Must read, all about design an effient android app:
 https://medium.freecodecamp.com/android-development-best-practices-83c94b027fd3#.ctes1u5rk
 http://www.curious-creature.com/2008/12/18/avoid-memory-leaks-on-android/
+
+Exam links:
+http://www.sarkarinaukrisarch.in/sbi-recruitment/#Assistant-Manager
